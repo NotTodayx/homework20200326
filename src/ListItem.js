@@ -16,8 +16,9 @@ class ListItem extends Component{
         )
     }
     render () {
-        let newStyle ={
-            color: this.state.defaultStatus ? '#b91111' : '#312d2d'
+        let newStyle = {
+            color: this.state.defaultStatus ? '#8d8d8d':'#b91111',
+            textDecorationLine: this.state.defaultStatus ? 'line-through':'none'
         }
         const item = this.props.item;
         if (item.done) {
