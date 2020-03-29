@@ -17,7 +17,7 @@ class ListItem extends Component{
     }
     render () {
         const item = this.props.item    
-        return <p onClick ={this.textClick.bind(this)} className={this.state.defaultStatus ? 'item': 'done-item'} >{item.content}</p>
+        return <p onClick ={this.textClick.bind(this)} className={this.state.defaultStatus ? 'done-item': 'item'} >{item.content}</p>
     }
 }
 
